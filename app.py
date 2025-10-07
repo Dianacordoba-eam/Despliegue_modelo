@@ -11,8 +11,8 @@ try:
   minmax_scaler = joblib.load('minmax_scaler.pkl')
   # *** IMPORTANT ***
   # To predict a numerical grade, you need to load a regression model here.
-  # The currently loaded model ('best_model.pkl') is a classifier and will output 'si' or 'no'.
-  prediction_model = joblib.load('best_model.pkl')
+  # The currently loaded model (knn_model.pkl') is a classifier and will output 'si' or 'no'.
+  prediction_model = joblib.load('knn_model.pkl')
 except FileNotFoundError:
   st.error("Error: Model files not found. Please make sure 'onehot_encoder.pkl', 'minmax_scaler.pkl', and 'knn_model.pkl' are in the same directory.")
   st.stop()
