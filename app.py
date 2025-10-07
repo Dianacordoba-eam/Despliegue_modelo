@@ -73,4 +73,4 @@ if st.button('Predict Grade'):
     st.markdown(f"<h3 style='text-align:center; color:green;'>{float(prediction[0]):.2f}</h3>", unsafe_allow_html=True)
   else:
     # Display as text if categorical (e.g., 'si' or 'no')
-    st.markdown(f"<h3 style='text-align:center; color:green;'>{prediction[0]}</h3>", unsafe_allow_html=True)}
+    st.markdown(f"<h3 style='text-align:center; color:green;'>{prediction[0]}</h3>", unsafe_allow_html=True)
